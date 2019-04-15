@@ -8,7 +8,9 @@
 {% for article in articles %}
 
 <p><a href="article/{{article.id}}">{{article.title}}</a>
-<a href="edit/{{article.id}}">Modifier l'article</a></p>
+<a href="edit/{{article.id}}">Modifier l'article</a>
+<a href="delete/{{article.id}}">Supprimer l'article</a>
+</p>
 
 {% endfor %}
 

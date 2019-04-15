@@ -10,7 +10,7 @@ namespace AppBundle\Repository;
  */
 class ArticleRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function findArticlesByOrderDesc()
+    public function findArticlesOrderDesc()
     {
         return $this
         ->createQueryBuilder('article')
