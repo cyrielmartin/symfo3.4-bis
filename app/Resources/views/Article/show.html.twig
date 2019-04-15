@@ -3,11 +3,12 @@
 {% block title %}AppBundle:Article:show{% endblock %}
 
 {% block body %}
-<h1>Tous les articles</h1>
+<h1>Tous les articles</h1> <a href="/new">Créer un article</a>
 
 {% for article in articles %}
 
-{{article.title}}
+<p><a href="article/{{article.id}}">{{article.title}}</a>
+<a href="edit/{{article.id}}">Modifier l'article</a></p>
 
 {% endfor %}
 
